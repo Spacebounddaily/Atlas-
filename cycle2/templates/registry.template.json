@@ -1,0 +1,131 @@
+{
+  "satellite_registration": {
+    "metadata": {
+      "schema_version": "2.0",
+      "registration_date": "YYYY-MM-DD",
+      "last_updated": "YYYY-MM-DD",
+      "status": "pending"
+    },
+    "satellite_info": {
+      "name": "[SATELLITE_NAME]",
+      "satellite_id": "[AUTO_GENERATED]",
+      "mission_type": "[scientific|communication|navigation|earth_observation|other]",
+      "description": "[Mission description and objectives]",
+      "operator": {
+        "organization": "[Organization Name]",
+        "primary_contact": {
+          "name": "[Contact Name]",
+          "email": "[Contact Email]",
+          "phone": "[Contact Phone]"
+        },
+        "secondary_contact": {
+          "name": "[Backup Contact Name]",
+          "email": "[Backup Contact Email]",
+          "phone": "[Backup Contact Phone]"
+        }
+      }
+    },
+    "orbital_parameters": {
+      "altitude_km": {
+        "perigee": 0,
+        "apogee": 0
+      },
+      "inclination_deg": 0,
+      "period_minutes": 0,
+      "eccentricity": 0,
+      "right_ascension": 0,
+      "argument_of_perigee": 0
+    },
+    "launch_info": {
+      "launch_date": "YYYY-MM-DD",
+      "launch_site": "[Launch Site]",
+      "launch_vehicle": "[Vehicle Name]",
+      "deployment_altitude": 0,
+      "estimated_lifetime_years": 0
+    },
+    "communication": {
+      "frequencies": {
+        "uplink_mhz": [],
+        "downlink_mhz": []
+      },
+      "modulation": "[Modulation Type]",
+      "bandwidth_khz": 0,
+      "transmission_power_w": 0,
+      "antenna_specs": {
+        "type": "[Antenna Type]",
+        "gain_dbi": 0,
+        "beamwidth_deg": 0
+      }
+    },
+    "technical_specs": {
+      "mass_kg": 0,
+      "dimensions_m": {
+        "length": 0,
+        "width": 0,
+        "height": 0
+      },
+      "power_generation_w": 0,
+      "payload_capacity_kg": 0,
+      "propulsion": {
+        "type": "[Propulsion Type]",
+        "delta_v_ms": 0
+      }
+    },
+    "ground_stations": [
+      {
+        "name": "[Station Name]",
+        "location": {
+          "latitude": 0,
+          "longitude": 0,
+          "altitude_m": 0
+        },
+        "capabilities": [
+          "tracking",
+          "telemetry",
+          "commanding"
+        ]
+      }
+    ],
+    "mission_parameters": {
+      "objectives": [
+        "[Primary Objective]",
+        "[Secondary Objective]"
+      ],
+      "payload_instruments": [
+        {
+          "name": "[Instrument Name]",
+          "type": "[Instrument Type]",
+          "description": "[Description]"
+        }
+      ],
+      "data_products": [
+        {
+          "type": "[Data Type]",
+          "volume_gb_per_day": 0,
+          "format": "[Data Format]"
+        }
+      ]
+    },
+    "compliance": {
+      "debris_mitigation": {
+        "end_of_life_disposal": "[deorbit|graveyard_orbit|controlled_reentry]",
+        "estimated_disposal_date": "YYYY-MM-DD",
+        "passivation_capability": true
+      },
+      "frequency_coordination": {
+        "itu_filing": "[Filing Number]",
+        "coordination_status": "[pending|approved]"
+      },
+      "licensing": {
+        "fcc_license": "[License Number]",
+        "other_licenses": []
+      }
+    },
+    "security": {
+      "encryption_enabled": true,
+      "authentication_method": "[Method]",
+      "access_control_level": "[public|restricted|classified]"
+    },
+    "notes": "[Additional notes and comments]"
+  }
+}
